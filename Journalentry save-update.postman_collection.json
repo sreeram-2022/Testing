@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "c29b7676-f0c6-4f3a-9809-c30d643e66f1",
+		"name": "Journalentry save/update",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\t\"nsJournalEntryDTOs\": [\r\n\t\t{\r\n\t\t\t\"accoutType\": \"CREDIT\",\r\n\t\t\t\"accoutNumber\": \"2260.12\",\r\n\t\t\t\"fund\": \"3\",\r\n\t\t\t\"restriction\": \"1\",\r\n\t\t\t\"location\": \"310\",\r\n\t\t\t\"programCode\": \"00\",\r\n\t\t\t\"department\": \"310\",\r\n\t\t\t\"memoDescription\": \"dev-testing\",\r\n\t\t\t\"amount\": 2\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"accoutType\": \"DEBIT\",\r\n\t\t\t\"accoutNumber\": \"2260.12\",\r\n\t\t\t\"fund\": \"3\",\r\n\t\t\t\"restriction\": \"1\",\r\n\t\t\t\"location\": \"310\",\r\n\t\t\t\"programCode\": \"00\",\r\n\t\t\t\"department\": \"310\",\r\n\t\t\t\"memoDescription\": \"Bank Sweep-Test\",\r\n\t\t\t\"amount\":2\r\n\t\t}\r\n\t],\r\n    \"postingDate\":\"01/25/2022\",\r\n\t\"memoDescription\": \"DEV-JE-TEST\",\r\n\t\"createdBy\": \"ryerragonda@criyaa.com\",\r\n\t\"participantId\": 5,\r\n    \"jeTransId\":\"MARCH\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.2.2.137:8080/dnl-services/gen-journal/",
+					"protocol": "http",
+					"host": [
+						"10",
+						"2",
+						"2",
+						"137"
+					],
+					"port": "8080",
+					"path": [
+						"dnl-services",
+						"gen-journal",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\t\"nsJournalEntryDTOs\": [\r\n\t\t{\r\n\t\t\t\"accoutType\": \"CREDIT\",\r\n\t\t\t\"accoutNumber\": \"2260.12\",\r\n\t\t\t\"fund\": \"3\",\r\n\t\t\t\"restriction\": \"1\",\r\n\t\t\t\"location\": \"310\",\r\n\t\t\t\"programCode\": \"00\",\r\n\t\t\t\"department\": \"310\",\r\n\t\t\t\"memoDescription\": \"dev-testing\",\r\n\t\t\t\"amount\": 2\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"accoutType\": \"DEBIT\",\r\n\t\t\t\"accoutNumber\": \"2260.12\",\r\n\t\t\t\"fund\": \"3\",\r\n\t\t\t\"restriction\": \"1\",\r\n\t\t\t\"location\": \"310\",\r\n\t\t\t\"programCode\": \"00\",\r\n\t\t\t\"department\": \"310\",\r\n\t\t\t\"memoDescription\": \"Bank Sweep-Test\",\r\n\t\t\t\"amount\":2\r\n\t\t}\r\n\t],\r\n    \"postingDate\":\"01/25/2022\",\r\n\t\"memoDescription\": \"DEV-JE-TEST\",\r\n\t\"createdBy\": \"ryerragonda@criyaa.com\",\r\n\t\"participantId\": 5,\r\n   \"journalEntryId\": \"128500\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.2.2.137:8080/dnl-services/gen-journal/",
+					"protocol": "http",
+					"host": [
+						"10",
+						"2",
+						"2",
+						"137"
+					],
+					"port": "8080",
+					"path": [
+						"dnl-services",
+						"gen-journal",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
